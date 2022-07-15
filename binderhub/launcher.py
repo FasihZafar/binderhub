@@ -217,7 +217,7 @@ class Launcher(LoggingConfigurable):
             user_data = await self.get_user_data(escaped_username)
             if server_name in user_data["servers"]:
                 raise web.HTTPError(
-                    409, f"User {username} already has a running server."
+                    409, f"Hello There! User {username} already has a running server."
                 )
         elif self.named_server_limit_per_user > 0:
             # authentication is enabled with named servers
